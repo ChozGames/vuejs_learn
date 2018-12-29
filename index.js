@@ -27,3 +27,18 @@ var app3 = new Vue({
     ]
   }
 });
+
+app3.todos.push( { text : "Un nouveau texte" })
+
+
+var app4 = new Vue({
+  el: '#app4',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
